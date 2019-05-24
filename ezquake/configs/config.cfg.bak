@@ -11,7 +11,7 @@
 // gnz's config
 
 // ezQuake 3.5-dev-alpha20 r6509~ed5558ae May  3 2019, 23:47:50
-//  /opt/ezquake/ezquake.bin+connectdal.spawnfrag.com:28501
+//  /opt/ezquake/ezquake.binqw://nl2.badplace.eu:28506:28506/observe
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                                //
@@ -182,6 +182,7 @@ hud_group7_width                      "300"
 hud_group8_align_x                    "right"
 hud_group8_align_y                    "center"
 hud_group8_frame                      "0"
+hud_group8_show                       "1"
 hud_group9_align_x                    "left"
 hud_group9_align_y                    "top"
 hud_gun2_align_x                      "before"
@@ -560,7 +561,6 @@ r_smoothcrosshair                     "0"
 
 //Screen Settings
 gl_contrast                           "1.2"
-gl_gamma                              "0.8"
 r_smoothimages                        "0"
 r_tracker                             "0"
 r_tracker_flags                       "1"
@@ -620,8 +620,8 @@ set lastattack                       "rl"
 
 sb_sourceunmarkall
 sb_sourcemark "QuakeServers.net"
-sb_sourcemark "Asgaard"
 sb_sourcemark "Global"
+sb_sourcemark "Asgaard"
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                                //
