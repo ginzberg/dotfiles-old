@@ -1,0 +1,6 @@
+! ~/.xres/rofi
+
+rofi.combi-modi:    window,drun,ssh
+rofi.theme:         dracula
+rofi.font:          hack 10
+rofi.modi:          combi
