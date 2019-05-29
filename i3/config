@@ -7,6 +7,9 @@ set $mod Mod4
 font pango:monospace 8
 font pango:DejaVu Sans Mono 8
 
+# Mouse behavior
+mouse_warping none
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -106,11 +109,12 @@ set $ws9 "9"
 set $ws10 "10"
 
 # set output for each workspace
-workspace $ws1 output DP-2
-workspace $ws2 output DVI-D-1
-workspace $ws3 output DP-2
-workspace $ws4 output DVI-D-1
-workspace $ws5 output DVI-D-1
+workspace $ws1 output DisplayPort-1
+workspace $ws2 output DVI-D-0
+workspace $ws3 output DisplayPort-1
+workspace $ws4 output DVI-D-0
+workspace $ws5 output DVI-D-0
+workspace $ws0 output HDMI-A-1
 
 
 # switch to workspace
@@ -195,29 +199,33 @@ assign [class="discord"] 2
 assign [class="obs"] 4
 assign [class="tc-twitch"] 2
 assign [class="Steam"] 3
+assign [class="Chromium"] 1
 
 # Force Floating 
-# for_window [class="radeon-profile"] floating enable
+for_window [class="pavucontrol"] floating enable
 
 # Make Quake start fullscreen
 for_window [class="ezquake.bin"] fullscreen enable
 
 # My custom shortcuts
-bindsym $mod+b exec --no-startup-id "/usr/bin/brave"
+# bindsym $mod+b exec --no-startup-id "/usr/bin/brave"
+bindsym $mod+c exec --no-startup-id chromium
 bindsym $mod+g exec i3-sensible-terminal -e ranger
-bindsym $mod+q exec --no-startup-id "/opt/ezquake/ezquake.bin +connect dal.spawnfrag.com:28501"
+# bindsym $mod+q exec --no-startup-id "/opt/ezquake/ezquake.bin +connect dal.spawnfrag.com:28501"
+bindsym $mod+q exec --no-startup-id "quake.sh"
 bindsym $mod+x exec --no-startup-id "/usr/bin/discord"
 bindsym $mod+t exec --no-startup-id "/usr/bin/steam-native"
 bindsym $mod+o exec --no-startup-id "/usr/bin/obs"
 bindsym $mod+y exec --no-startup-id tc-twitch
 
 # My startup shit
-exec_always --no-startup-id "/usr/bin/xrandr --output DP-2 --mode 1920x1080 --rate 143.85"
-exec_always --no-startup-id "/usr/bin/xrandr --output DVI-D-1 --mode 1920x1080 --rate 119.98"
+exec_always --no-startup-id "/usr/bin/xrandr --output DisplayPort-1 --mode 1920x1080 --rate 143.85"
+exec_always --no-startup-id "/usr/bin/xrandr --output DVI-D-0 --mode 1920x1080 --rate 119.98"
 exec_always --no-startup-id "${HOME}/.config/polybar/launch.sh"
 exec_always --no-startup-id "/usr/bin/compton -b -f"
 exec_always --no-startup-id feh --bg-cente ~/Pictures/wallpaper/quake_desktop.png
 exec --no-startup-id comptray
 exec --no-startup-id discord
-exec --no-startup-id brave
+exec --no-startup-id chromium
 exec --no-startup-id i3-msg 'workspace 5; exec i3-sensible-terminal'
+exec --no-startup-id "xrandr --output HDMI-A-1 --mode 1920x1080 --right-of DVI-D-0"

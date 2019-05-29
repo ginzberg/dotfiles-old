@@ -11,7 +11,7 @@
 // gnz's config
 
 // ezQuake 3.5-dev-alpha20 r6509~ed5558ae May  3 2019, 23:47:50
-//  /opt/ezquake/ezquake.binqw://nl2.badplace.eu:28504:28504/observe
+//  /opt/ezquake/ezquake.bin-no-triple-gl-buffer+connectbrdal.spawnfrag.com:28501-heapsize32768-clientport2018
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                                //
@@ -420,7 +420,7 @@ bottomcolor                           "7"
 topcolor                              "6"
 name                                  "gnz"
 rate                                  "50000"
-spectator                             "1"
+spectator                             "0"
 team                                  "blue"
 
 //Skin Settings
@@ -449,6 +449,7 @@ cl_model_bobbing                      "0"
 cl_muzzleflash                        "0"
 gl_powerupshells                      "0"
 r_drawflame                           "0"
+r_explosionType                       "3"
 r_grenadeTrail                        "12"
 r_lightflicker                        "0"
 r_rocketTrail                         "12"
@@ -456,19 +457,15 @@ r_rocketTrail                         "12"
 //Particle Effects
 gl_bounceparticles                    "0"
 gl_clipparticles                      "0"
-gl_part_blobs                         "1"
-gl_part_explosions                    "1"
 gl_part_gunshots                      "1"
 gl_part_spikes                        "1"
 gl_part_telesplash                    "1"
-gl_part_trails                        "1"
 gl_particle_blood_color               "0"
 gl_particle_blood_type                "0"
 gl_particle_explosions                "1"
 gl_particle_gunshots_type             "0"
 gl_particle_sparks                    "1"
 gl_particle_spikes_type               "0"
-gl_particle_trail_detail              "0"
 gl_particle_trail_length              "0"
 gl_particle_trail_time                "0"
 gl_particle_trail_type                "0"
@@ -508,6 +505,9 @@ cfg_backup                            "1"
 //OpenGL Rendering
 gl_inferno_speed                      "0"
 gl_inferno_trail                      "0"
+gl_lightning                          "1"
+gl_lightning_color                    "24 28 51"
+gl_lightning_size                     "1"
 gl_lightning_sparks                   "1"
 gl_triplebuffer                       "0"
 r_farclip                             "4096"
@@ -520,7 +520,7 @@ vid_framebuffer_palette               "1"
 vid_framebuffer_scale                 "0"
 vid_framebuffer_width                 "1920"
 vid_fullscreen                        "0"
-vid_gamma_workaround                  "0"
+vid_gammacorrection                   "1"
 vid_hwgammacontrol                    "0"
 vid_win_height                        "1080"
 vid_win_width                         "1920"
