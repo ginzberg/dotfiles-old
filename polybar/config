@@ -17,26 +17,32 @@
 ;==========================================================
 
 [colors]
-background = ${xrdb:color0:#222}
+background = ${xrdb:background:#222}
+#background = $aa000000
 background-alt = #444
-foreground = ${xrdb:color7:#222}
-foreground-alt = ${xrdb:color7:#222}
-primary = ${xrdb:color1:#222}
-secondary = ${xrdb:color2:#222}
-alert = ${xrdb:color3:#222}
+foreground = ${xrdb:foreground:#222}
+foreground-alt = #555
+primary = ${xrdb:color6:#222}
+secondary = ${xrdb:color3:#222}
+alert = ${xrdb:color1:#222}
 
-D_background = ${xrdb:background:#222}
-D_current = ${xrdb:color16:#222}
-D_selection = ${xrdb:color16:#222}
-D_foreground = ${xrdb:foreground:#222}
-D_comment = ${xrdb:color17:#222}
-D_cyan = ${xrdb:color6:#222}
-D_green = ${xrdb:color2:#222}
-D_orange = ${xrdb:color18:#222}
-D_pink = ${xrdb:color5:#222}
-D_purple = ${xrdb:color4:#222}
-D_red = ${xrdb:color1:#222}
-D_yellow = ${xrdb:color3:#222}
+color0 = ${xrdb:color0:#222}
+color8 = ${xrdb:color8:#222}
+color1 = ${xrdb:color1:#222}
+color9 = ${xrdb:color9:#222}
+color2 = ${xrdb:color2:#222}
+color10 = ${xrdb:color10:#222}
+color3 = ${xrdb:color3:#222}
+color11 = ${xrdb:color11:#222}
+color4 = ${xrdb:color4:#222}
+color12 = ${xrdb:color12:#222}
+color5 = ${xrdb:color5:#222}
+color13 = ${xrdb:color13:#222}
+color6 = ${xrdb:color6:#222}
+color14 = ${xrdb:color14:#222}
+color7 = ${xrdb:color7:#222}
+color15 = ${xrdb:color15:#222}
+color16 = ${xrdb:color16:#222}
 
 [bar/main]
 monitor = ${env:MONITOR:DisplayPort-1}
@@ -47,8 +53,8 @@ height = 32
 radius = 0.0
 fixed-center = false
 
-background = ${colors.D_background}
-foreground = ${colors.D_foreground}
+background = ${colors.background}
+foreground = ${colors.foreground}
 
 line-size = 3
 line-color = #f00
@@ -96,9 +102,9 @@ cursor-scroll = ns-resize
 [module/xwindow]
 type = internal/xwindow
 
-format-underline =  ${colors.D_purple}
-format-foreground = ${colors.D_foreground}
-format-background = ${colors.D_selection}
+format-underline =  ${colors.secondary}
+format-foreground = ${colors.foreground}
+format-background = ${colors.selection}
 format-padding = 4
 
 ; Available tokens:
@@ -145,8 +151,8 @@ label-unmounted-foreground = ${colors.foreground-alt}
 type = internal/bspwm
 
 label-focused = %index%
-label-focused-background = ${colors.D_current}
-label-focused-underline= ${colors.D_selection}
+label-focused-background = ${colors.primary}
+label-focused-underline= ${colors.secondary}
 label-focused-padding = 2
 
 label-occupied = %index%
@@ -250,8 +256,8 @@ card = intel_backlight
 type = internal/cpu
 interval = 2
 format-prefix = " "
-format-prefix-foreground = ${colors.D_current}
-format-underline = ${colors.D_cyan}
+format-prefix-foreground = ${colors.primary}
+format-underline = ${colors.secondary}
 label = %percentage:2%%
 
 [module/memory]
@@ -259,7 +265,7 @@ type = internal/memory
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${colors.D_purple}
+format-underline = ${colors.secondary}
 label = %percentage_used%%
 
 [module/wlan]
@@ -311,8 +317,10 @@ time = %I:%M %p
 time-alt = %H:%M:%S
 
 format-prefix = 
-format-prefix-foreground = ${colors.foreground-alt}
-# format-underline = ${colors.D_orange}
+format-prefix-foreground = ${colors.foreground}
+format-underline = ${colors.color10}
+format-background = ${colors.background}
+format-padding = 5
 
 label = %date% %time%
 
@@ -322,9 +330,14 @@ type = internal/pulseaudio
 format-volume = <label-volume> 
 label-volume =   %percentage%%
 label-volume-foreground = ${root.foreground}
+label-volume-background = ${colors.background}
+label-volume-underline = ${colors.color12}
+label-volume-padding = 5
 
 label-muted = 🔇 muted
-label-muted-foreground = #666
+label-muted-foreground = ${colors.foreground}
+label-muted-background = ${colors.background}
+label-muted-underline = ${colors.color12}
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
@@ -431,9 +444,10 @@ type = custom/menu
 expand-right = true
 
 format-spacing = 1
-
 label-open = 
 label-open-foreground = ${colors.foreground}
+label-open-underline = ${colors.color9}
+label-open-padding = 6
 label-close =  cancel
 label-close-foreground = ${colors.foreground}
 label-separator = |

@@ -6,7 +6,14 @@ source $VIMRUNTIME/defaults.vim
 filetype plugin on
 filetype indent on
 syntax on
+colo torte
 
+" vim-plug
+call plug#begin()
+Plug 'dylanaraps/wal.vim'
+call plug#end()
+
+colorscheme wal
 
 " Vundle Config
 set nocompatible              " be iMproved, required
@@ -22,7 +29,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " My added Plugins
-Plugin 'dracula/vim'
+" Plugin 'dracula/vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
