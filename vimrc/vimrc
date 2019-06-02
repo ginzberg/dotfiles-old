@@ -7,13 +7,13 @@ filetype plugin on
 filetype indent on
 syntax on
 colo torte
+set number
 
 " vim-plug
 call plug#begin()
 Plug 'dylanaraps/wal.vim'
 call plug#end()
 
-colorscheme wal
 
 " Vundle Config
 set nocompatible              " be iMproved, required
@@ -30,6 +30,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 " My added Plugins
 " Plugin 'dracula/vim'
+
+Plugin 'morhetz/gruvbox'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
