@@ -7,7 +7,10 @@ filetype plugin on
 filetype indent on
 syntax on
 colo torte
-set number
+
+" turn hybrid line numbers on
+:set number relativenumber
+:set nu rnu
 
 " vim-plug
 call plug#begin()

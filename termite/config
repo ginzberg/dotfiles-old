@@ -9,7 +9,7 @@
 #font = Monospace 9
 # font = Inconsolata 12
 #font = Inconsolata Nerd Font 14
-font = DejaVu Sans Mono 14
+font = DejaVu Sans Mono 10
 #font = Font Awesome 5 Free 9
 #font = Font Awesome 5 Brands 9
 #fullscreen = true
@@ -51,7 +51,7 @@ background = #282828
 foreground = #ebdbb2
 foreground_bold = #ebdbb2
 # background transparent
-# background = rgba(0, 0, 0, 0.8)
+background = rgba(0, 0, 0, 0.8)
 
 # dark0 + gray
 color0 = #282828
