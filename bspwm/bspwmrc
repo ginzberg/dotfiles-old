@@ -2,10 +2,12 @@
 
 sxhkd &
 picom &
-/home/rallen/.config/polybar/launch.sh &
-xrandr --output DisplayPort-1 --primary --mode 1920x1080 --rate 143.85 &
-xrandr --output DVI-D-0 --mode 1920x1080 --rate 119.98 --rotate left &
-feh --bg-cente ~/Pictures/wallpaper/quake_desktop.png &
+# /home/rallen/.config/polybar/launch.sh &
+polybar.sh &
+# xrandr --output DisplayPort-1 --primary --mode 1920x1080 --rate 143.85 &
+# xrandr --output DVI-D-0 --mode 1920x1080 --rate 119.98 --rotate left &
+# feh --bg-cente ~/Pictures/wallpaper/quake_desktop.png &
+monitors.sh &
 
 bspc monitor DisplayPort-1 -n 0 -d 1 2 3 4 5  
 bspc monitor DVI-D-0 -n 1 -d 6 7 8 9 10
