@@ -673,7 +673,6 @@ alias +ssg           "weapon 3 2 1; +attack"
 alias -ssg           "wait; -attack; weapon 2"
 
 alias ax             "cmd g; set weaponreg g"
-alias dallas1        "connect dal.spawnfrag.com:28501"
 alias killme         "impulse 7; tp_msgkillme"
 alias on_enter       "exec configs/gnzweap.cfg"
 alias on_enter_ctf   "exec configs/gnzwreg.cfg"
