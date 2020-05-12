@@ -77,16 +77,16 @@ font-4 = Font Awesome 5 Free,Font Awesome 5 Free Solid:style=Solid
 font-5 = siji:pixelsize=10;1
 
 
-modules-left = bspwm 
+modules-left = i3 bspwm 
 modules-center = 
-modules-right = updates-arch-combined pulseaudio date powermenu
+modules-right = pulseaudio date powermenu
 
 tray-position = right
 tray-padding = 0
 ;tray-background = #0063ff
 
-wm-restack = bspwm
-;wm-restack = i3
+;wm-restack = bspwm
+wm-restack = i3
 
 ;override-redirect = true
 
