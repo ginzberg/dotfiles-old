@@ -1,0 +1,8 @@
+!-----------
+! st config
+!-----------
+
+st*font: DejaVu Sans Mono:size=11:antialias=true:autohint=true
+st*fontalt0: BlexMono Nerd Font:size=9:antialias=true:autohint=true
+st*fontalt1: Symbola:size=9:antialias=true:autohint=true
+st*borderpx: 10
