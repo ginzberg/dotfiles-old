@@ -17,4 +17,8 @@ picom --unredir-if-possible &
 slstatus &
 
 # Window Manager
-exec ~/scripts/startdwm.sh
+exec ~/scripts/startdwm.sh &
+
+# Autostart Apps
+discord &
+brave-nightly 
