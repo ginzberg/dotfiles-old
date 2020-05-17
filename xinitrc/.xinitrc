@@ -16,6 +16,9 @@ picom --unredir-if-possible &
 # Keybinds
 sxhkd &
 
+# USB automount
+udiskie &
+
 # bar
 exec ~/scripts/dwm_bar.sh &
 
