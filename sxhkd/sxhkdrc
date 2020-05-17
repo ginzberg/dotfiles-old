@@ -16,5 +16,5 @@ super + shift + { F9, F10, F11 }
 # My Apps
 
 # run apps
-super + ctrl + { q, b, d, s, p }
-	{ quake.sh, brave-nightly, discord, steam, pmixer.sh }
+super + ctrl + { q, b, d, s, p, r }
+	{ quake.sh, brave-nightly, discord, steam, st pulsemixer, st ranger }
