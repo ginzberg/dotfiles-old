@@ -11,7 +11,7 @@ xset dpms 0 0 300
 exec ~/scripts/monitors.sh &
 
 # Compositor
-picom --unredir-if-possible &
+picom &
 
 # Keybinds
 sxhkd &
