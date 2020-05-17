@@ -13,12 +13,11 @@ exec ~/scripts/monitors.sh &
 # Compositor
 picom --unredir-if-possible &
 
-# Status 
-slstatus &
+# Keybinds
+sxhkd &
+
+# bar
+exec ~/scripts/dwm_bar.sh &
 
 # Window Manager
-exec ~/scripts/startdwm.sh &
-
-# Autostart Apps
-discord &
-brave-nightly 
+exec ~/scripts/startdwm.sh 

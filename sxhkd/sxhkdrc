@@ -6,10 +6,15 @@
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# media control
+super + { F9, F10, F11 }
+	{ pamixer -t, pamixer -d 10, pamixer -i 10 }
+super + shift + { F9, F10, F11 }
+	{ pamixer -t, pamixer -d 1, pamixer -i 1 }
+
+
 # My Apps
 
 # run apps
-super + shift + ctrl + { q, b, d, s, p }
-	{ quake.sh, brave-nightly, discord, steam, pavucontrol }
-
-
+super + ctrl + { q, b, d, s, p }
+	{ quake.sh, brave-nightly, discord, steam, pmixer.sh }
