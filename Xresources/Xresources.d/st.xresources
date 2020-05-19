@@ -2,7 +2,21 @@
 ! st config
 !-----------
 
-st*font: DejaVu Sans Mono:size=11:antialias=true:autohint=true
-st*fontalt0: BlexMono Nerd Font:size=9:antialias=true:autohint=true
+st*font: IBM Plex Mono:size=14
+
+st*fontalt0: Siji:size=14 
 st*fontalt1: Symbola:size=9:antialias=true:autohint=true
 st*borderpx: 10
+
+!----------
+! extra colors
+!----------
+
+! st*defaultfg: 
+! st*defaultbg:
+! st*defaultcs:
+! st*defaultrcs:
+
+st*background: #EBDBB2
+st*cursorColor: #282828
+st*alpha: 0.8

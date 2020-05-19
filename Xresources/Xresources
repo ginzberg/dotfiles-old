@@ -12,14 +12,13 @@ Xft.autohint: true
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcdfilter
 
-
 ! include external colors
 #include 	".Xresources.d/gruvbox-dark.xresources"
 !#include 	".Xresources.d/nord.xresources"
 
+! set global alpha
+*.alpha:	0.8
+
 ! include app specific
 #include 	".Xresources.d/dwm.xresources"
 #include	".Xresources.d/st.xresources"
-
-! set alpha
-*.alpha:	0.8

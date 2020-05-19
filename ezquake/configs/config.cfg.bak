@@ -432,6 +432,7 @@ bottomcolor                           "7"
 topcolor                              "6"
 name                                  "gnz"
 rate                                  "50000"
+spectator                             "0"
 team                                  "rng"
 
 //Skin Settings
@@ -515,6 +516,7 @@ cfg_backup                            "1"
 //OpenGL Rendering
 gl_inferno_speed                      "0"
 gl_inferno_trail                      "0"
+gl_lightning                          "1"
 gl_lightning_color                    "24 28 51"
 gl_lightning_size                     "1"
 gl_lightning_sparks                   "1"
@@ -637,8 +639,8 @@ set weaponreg                        "f"
 
 sb_sourceunmarkall
 sb_sourcemark "QuakeServers.net"
-sb_sourcemark "Asgaard"
 sb_sourcemark "Global"
+sb_sourcemark "Asgaard"
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                                //
@@ -671,6 +673,8 @@ alias -ssg           "wait; -attack; weapon 2"
 
 alias ax             "cmd g; set weaponreg g"
 alias dallas1        "connect dal.spawnfrag.com:28501"
+alias f_death        "tp_msglost"
+alias f_took         "tp_msgtook"
 alias killme         "impulse 7; tp_msgkillme"
 alias on_enter       "exec configs/gnzweap.cfg"
 alias on_enter_ctf   "exec configs/gnzwreg.cfg"
