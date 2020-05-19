@@ -11,7 +11,7 @@ xset dpms 0 0 300
 exec ~/scripts/monitors.sh &
 
 # Compositor
-# picom & # disabled now due to lag with dual monitors and glx backend
+picom --unredir-if-possible --backend xrender & # disabled now due to lag with dual monitors and glx backend
 
 # Keybinds
 sxhkd &
