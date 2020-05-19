@@ -444,7 +444,6 @@ r_enemyskincolor                      "0 150 0"
 con_notify                            "0"
 con_notifylines                       "8"
 con_notifytime                        "15"
-gl_consolefont                        "6"
 r_smoothtext                          "0"
 scr_conalpha                          "1"
 scr_conback                           "0"
@@ -577,6 +576,7 @@ r_smoothcrosshair                     "0"
 
 //Screen Settings
 gl_contrast                           "1"
+gl_gamma                              "0.8"
 r_tracker                             "0"
 r_tracker_color_tkbad                 "900"
 r_tracker_color_tkgood                "090"
@@ -605,8 +605,8 @@ v_ringcshift                          "1"
 v_suitcshift                          "1"
 
 //View Settings
-default_fov                           "95"
-fov                                   "95"
+default_fov                           "102"
+fov                                   "102"
 scr_fovmode                           "1"
 v_kickpitch                           "0"
 v_kickroll                            "0"
@@ -639,8 +639,8 @@ set weaponreg                        "f"
 
 sb_sourceunmarkall
 sb_sourcemark "QuakeServers.net"
-sb_sourcemark "Global"
 sb_sourcemark "Asgaard"
+sb_sourcemark "Global"
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                                //
