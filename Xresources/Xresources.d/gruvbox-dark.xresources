@@ -1,7 +1,7 @@
 ! define gruvbox colors
 
 #define BACKGROUND #282828
-#define FOREGROUND #EBDBB2
+#define FOREGROUND #ebdbb2
 #define COLOR0 #282828
 #define COLOR8 #928374
 #define COLOR1 #cc241d
@@ -38,4 +38,4 @@
 *.color6:      COLOR6    
 *.color14:     COLOR14   
 *.color7:      COLOR7    
-*.color15:     COLOR15 
+*.color15:     COLOR15

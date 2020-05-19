@@ -14,6 +14,7 @@ Xft.lcdfilter: lcdfilter
 
 ! include external colors
 #include 	".Xresources.d/gruvbox-dark.xresources"
+!#include        ".Xresources.d/gruvbox-dark-soft.xresources"
 !#include 	".Xresources.d/nord.xresources"
 
 ! set global alpha
