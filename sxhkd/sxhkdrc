@@ -8,9 +8,9 @@ super + Escape
 
 # media control
 super + { F9, F10, F11 }
-	{ pamixer -t, pamixer -d 10, pamixer -i 10 }
+	{ pamixer -t, pamixer -d 10, pamixer -i 10 } ; pkill -RTMIN+10 blocks
 super + shift + { F9, F10, F11 }
-	{ pamixer -t, pamixer -d 1, pamixer -i 1 }
+	{ pamixer -t, pamixer -d 1, pamixer -i 1 } ; pkill -RTMIN+10 blocks
 
 
 # My Apps

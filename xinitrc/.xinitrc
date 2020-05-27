@@ -20,7 +20,11 @@ sxhkd &
 udiskie &
 
 # bar
-exec ~/scripts/dwm_bar.sh &
+# exec ~/scripts/dwm_bar.sh &
+dwmblocks &
+
+# dunst
+dunst &
 
 # Window Manager
 exec ~/scripts/startdwm.sh 
