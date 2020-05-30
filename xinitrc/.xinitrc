@@ -21,10 +21,16 @@ udiskie &
 
 # bar
 # exec ~/scripts/dwm_bar.sh &
-dwmblocks &
+# dwmblocks &
+polybar main &
+polybar secondary &
 
 # dunst
 dunst &
 
+# cursor
+xsetroot -cursor_name left_ptr &
+
 # Window Manager
-exec ~/scripts/startdwm.sh 
+# exec ~/scripts/startdwm.sh 
+exec bspwm
