@@ -11,7 +11,7 @@ xset dpms 0 0 300
 exec ~/scripts/monitors.sh &
 
 # Compositor
-picom --unredir-if-possible --backend xrender & # disabled now due to lag with dual monitors and glx backend
+picom --experimental-backends -b &
 
 # Keybinds
 sxhkd &
@@ -19,11 +19,8 @@ sxhkd &
 # USB automount
 udiskie &
 
-# bar
-# exec ~/scripts/dwm_bar.sh &
-# dwmblocks &
-polybar main &
-polybar secondary &
+# Bar
+polybar.sh &
 
 # dunst
 dunst &

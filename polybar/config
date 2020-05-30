@@ -37,13 +37,13 @@ fixed-center = false
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 3
+line-size = 6
 line-color = ${colors.primary}
 
 border-size = 4
 border-color = #00000000
 
-padding-left = 0
+padding-left = 2 
 padding-right = 2
 
 module-margin-left = 1
@@ -73,19 +73,22 @@ type = internal/bspwm
 
 label-focused = "%name% %icon% "
 label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
-label-focused-padding = 2
+label-focused-underline = ${colors.primary}
+label-focused-padding = 1 
 
 label-occupied = "%name% %icon% "
-label-occupied-padding = 2
+label-occupied-background = ${colors.background}
+label-occupied-underline = ${colors.foreground}
+label-occupied-padding = 1 
 
 label-urgent = "%name% %icon% "
 label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
+label-urgent-underline = ${colors.foreground-alt}
+label-urgent-padding = 1
 
 label-empty = "%name% %icon% "
 label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 2
+label-empty-padding = 1
 
 pin-workspaces = true
 
@@ -118,7 +121,7 @@ label = %date% %time%
 type = internal/pulseaudio
 
 format-volume = <label-volume> 
-label-volume = VOL %percentage%%
+label-volume =  %percentage%%
 label-volume-foreground = ${colors.foreground}
 label-volume-underline = ${colors.color2}
 
