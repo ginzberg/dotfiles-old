@@ -31,6 +31,7 @@ color16 = ${xrdb:color16}
 monitor = ${env:MONITOR:DisplayPort-1}
 width = 98%
 offset-x = 1%
+offset-y = 1%
 height = 32
 radius = 0
 fixed-center = false
@@ -42,7 +43,7 @@ line-size = 6
 line-color = ${colors.primary}
 
 border-size = 4
-border-color = #00000000
+border-color = ${colors.background}
 
 padding-left = 2 
 padding-right = 2
@@ -94,7 +95,7 @@ label-empty-padding = 1
 pin-workspaces = true
 
 ws-icon-0 = 1;
-ws-icon-1 = 2;
+ws-icon-1 = 2;
 ws-icon-2 = 3;﮸ 
 ws-icon-3 = 4; 
 ws-icon-4 = 5;

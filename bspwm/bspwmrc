@@ -1,7 +1,7 @@
 #!/bin/sh
 
 bspc monitor DisplayPort-1 -d 1 2 3
-bspc monitor DVI-D-0 -d 4 5 6 7 8 9 0
+bspc monitor DVI-D-0 -d 4 5 6 7 
 
 background=$(xrdb -query | grep "background" | cut -f2 | sed -r 's/#//' | head -n 1)
 foreground=$(xrdb -query | grep "foreground" | cut -f2 | sed -r 's/#//' | head -n 1)
@@ -36,6 +36,18 @@ bspc config presel_feedback_color "#cc241d"
 
 bspc rule -a ezquake.bin desktop=^2
 bspc rule -a discord desktop=^4
-bspc rule -a brave-browser desktop=^1
+bspc rule -a Brave-browser desktop=^1
 bspc rule -a Steam desktop=^2
 bspc rule -a obs desktop=^6
+
+# Autostart
+# keep services running
+(pgrep picom || picom --experimental-backends ) &
+(pgrep sxhkd || sxhkd ) &
+(pgrep polybar || polybar.sh ) &
+(pgrep dunst || dunst ) &
+
+# main apps
+(pgrep brave || brave-browser ) &
+(pgrep discord || discord ) &
+
