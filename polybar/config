@@ -72,7 +72,7 @@ modules-right = date
 type = internal/bspwm
 
 label-focused = "%name% %icon% "
-label-focused-background = ${colors.background-alt}
+label-focused-background = ${colors.background}
 label-focused-underline = ${colors.primary}
 label-focused-padding = 1 
 
