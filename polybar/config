@@ -107,13 +107,13 @@ ws-icon-default = 
 type = internal/date
 interval = 5
 
-date =
-date-alt = " %Y-%m-%d"
+date = %a
+date-alt = " %a %b %e"
 
-time = %H:%M
-time-alt = %H:%M:%S
+time = %l:%M %p
+time-alt = %l:%M:%S %p
 
-format-prefix = 
+format-prefix =
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${colors.primary}
 

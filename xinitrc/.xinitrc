@@ -10,20 +10,9 @@ fi
 xset dpms 0 0 300 
 exec ~/scripts/monitors.sh &
 
-# Compositor
-picom --experimental-backends &
-
-# Keybinds
-sxhkd &
 
 # USB automount
 udiskie &
-
-# Bar
-polybar.sh &
-
-# dunst
-dunst &
 
 # cursor
 xsetroot -cursor_name left_ptr &
