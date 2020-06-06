@@ -15,10 +15,10 @@ color6=$(xrdb -query | grep "color6" | cut -f2 | sed -r 's/#//' | head -n 1)
 color7=$(xrdb -query | grep "color7" | cut -f2 | sed -r 's/#//' | head -n 1)
 color8=$(xrdb -query | grep "color8" | cut -f2 | sed -r 's/#//' | head -n 1)
 
-bspc config border_width        6 
+bspc config border_width        4 
 bspc config window_gap          24
 
-bspc config split_ratio          0.6
+bspc config split_ratio          0.52
 bspc config borderless_monocle   false
 bspc config gapless_monocle      false
 

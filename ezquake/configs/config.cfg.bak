@@ -11,7 +11,7 @@
 // gnz's config
 
 // ezQuake 3.5-dev-alpha20 r6509~ed5558ae Jan  2 2020, 10:37:56
-//  /opt/ezquake/ezquake.bin-no-triple-gl-buffer+connectbrdal.spawnfrag.com:28501-heapsize32768-clientport2018
+//  /opt/ezquake/ezquake.binqw://cooked.melb.besmella.com:28503:28503/observe
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                                //
@@ -401,8 +401,7 @@ hud_teamfrags_space_x                 "0"
 hud_teamfrags_style                   "3"
 hud_teaminfo_frame                    "0.25"
 hud_teaminfo_item_opacity             "1.0"
-hud_teaminfo_pos_y                    "45"
-hud_teaminfo_scale                    "1.5"
+hud_teaminfo_place                    "screen"
 hud_teaminfo_show                     "1"
 hud_teamstackbar_align_x              "center"
 hud_teamstackbar_align_y              "after"
@@ -436,6 +435,10 @@ team                                  "kfc"
 
 //Skin Settings
 enemyskin                             "2_green"
+enemybottomcolor                      "4"
+enemytopcolor                         "4"
+teambottomcolor                       "7"
+teamtopcolor                          "6"
 r_skincolormode                       "4"
 r_teamskincolor                       "180 0 0"
 enemyforceskins                       "3"
@@ -529,14 +532,15 @@ vid_framebuffer_height                "1080"
 vid_framebuffer_palette               "1"
 vid_framebuffer_scale                 "0"
 vid_framebuffer_width                 "1920"
+vid_gamma_workaround                  "0"
 vid_gammacorrection                   "2"
 vid_height                            "480"
 vid_renderer                          "1"
 vid_width                             "640"
-vid_win_height                        "1059"
-vid_win_width                         "1918"
-vid_xpos                              "0"
-vid_ypos                              "19"
+vid_win_height                        "969"
+vid_win_width                         "1860"
+vid_xpos                              "24"
+vid_ypos                              "75"
 
 //Sound Settings
 s_ambientlevel                        "0"
@@ -578,7 +582,7 @@ r_smoothcrosshair                     "0"
 
 //Screen Settings
 gl_contrast                           "1"
-gl_gamma                              ".8"
+gl_gamma                              ".7"
 r_tracker                             "0"
 r_tracker_color_tkbad                 "900"
 r_tracker_color_tkgood                "090"
@@ -641,8 +645,8 @@ set weaponreg                        "f"
 
 sb_sourceunmarkall
 sb_sourcemark "QuakeServers.net"
-sb_sourcemark "Asgaard"
 sb_sourcemark "Global"
+sb_sourcemark "Asgaard"
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                                //
@@ -790,6 +794,8 @@ bind  x             "tp_msghelp"
 bind  y             "messagemode2"
 bind  z             "tp_msgsafe"
 bind  PAUSE         "toggleproxymenu"
+bind  LEFTARROW     "pos_save"
+bind  RIGHTARROW    "pos_move"
 bind  ALT           "+movedown"
 bind  CTRL          "tp_msgreport"
 bind  SHIFT         "+sng"
