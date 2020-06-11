@@ -25,7 +25,13 @@ super + p
 
 # run apps
 super + ctrl + { q, b, d, s, p, r }
-	{quake.sh, brave-nightly, discord, steam, $TERMINAL -e pulsemixer, $TERMINAL -e ranger }
+	{ quake.sh, brave-nightly, discord, steam, $TERMINAL -e pulsemixer, $TERMINAL -e ranger }
+
+# services
+super + F5
+  systemctl --user start synergys
+super + F6
+  systemctl --user stop synergys
 
 # BSPWM
 
