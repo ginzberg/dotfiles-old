@@ -11,7 +11,7 @@
 // gnz's config
 
 // ezQuake 3.5-dev-alpha20 r6509~ed5558ae Jan  2 2020, 10:37:56
-//  /opt/ezquake/ezquake.bin-no-triple-gl-buffer+connectbrdal.spawnfrag.com:28501-heapsize32768-clientport2018
+//  /opt/ezquake/ezquake.binqw://9@qw2.irc.ax:28000/qtvplay
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                                //
@@ -558,10 +558,13 @@ cl_pext_lagteleport                   "1"
 //Server Browser
 sb_findroutes                         "1"
 sb_hideempty                          "0"
-sb_infospersec                        "1000"
+sb_inforetries                        "2"
+sb_infospersec                        "9999"
+sb_infotimeout                        "100"
 sb_pings                              "2"
-sb_pingspersec                        "1000"
-sb_sortservers                        "-63-63-631-63-63-63-63-63-63-63"
+sb_pingspersec                        "9999"
+sb_pingtimeout                        "100"
+sb_sortservers                        "3-63-63-631-63-63-63-63-63-63-6"
 
 //Status Bar and Scoreboard
 cl_useimagesinfraglog                 "1"

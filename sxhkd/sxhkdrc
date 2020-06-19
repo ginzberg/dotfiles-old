@@ -8,7 +8,7 @@ super + Escape
 
 # Terminal
 super + shift + Return
-	$TERMINAL
+	alacritty
 
 # media control
 super + { F9, F10, F11 }
