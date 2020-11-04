@@ -65,7 +65,7 @@ wm-restack = bspwm
 
 [bar/secondary]
 inherit = bar/main
-monitor = ${env:MONITOR:DVI-D-0}
+monitor = ${env:MONITOR:DisplayPort-0}
 
 modules-right = date 
 
@@ -94,12 +94,12 @@ label-empty-padding = 1
 
 pin-workspaces = true
 
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;﮸ 
-ws-icon-3 = 4; 
-ws-icon-4 = 5;
-ws-icon-5 = 6;
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;﮸
 ws-icon-default = 
 
 
