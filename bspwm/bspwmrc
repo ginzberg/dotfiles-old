@@ -40,6 +40,7 @@ bspc rule -a Brave-browser desktop=^4
 bspc rule -a Steam desktop=^5
 bspc rule -a obs desktop=^3
 bspc rule -a ezquake-linux-x86_64 desktop=^5 state=fullscreen follow=on
+bspc rule -a unezquake-linux-x86_64 desktop=^5 state=fullscreen follow=on
 
 # Autostart
 # keep services running
