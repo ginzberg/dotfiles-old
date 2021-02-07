@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =0
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/rallen/dotfiles/bspwm'
 let g:netrw_dirhist_0='/home/rallen/dotfiles/sxhkd'
 let g:netrw_dirhist_9='/home/rallen/dotfiles/polybar'
 let g:netrw_dirhist_8='/home/rallen/dotfiles/Xresources/Xresources.d'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_5='/home/rallen/dotfiles'
 let g:netrw_dirhist_4='/home/rallen/dotfiles/rofi/rofi/fonts'
 let g:netrw_dirhist_3='/home/rallen/dotfiles/rofi/themes/colorschemes'
 let g:netrw_dirhist_2='/home/rallen/dotfiles/rofi/themes/gruvbox-rofi'
-let g:netrw_dirhist_1='/home/rallen/dotfiles'

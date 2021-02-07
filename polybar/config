@@ -28,7 +28,7 @@ color16 = ${xrdb:color16}
 
 
 [bar/main]
-monitor = ${env:MONITOR:DisplayPort-1}
+monitor = ${env:MONITOR:DP-2}
 width = 98%
 offset-x = 1%
 offset-y = 1%
@@ -65,7 +65,7 @@ wm-restack = bspwm
 
 [bar/secondary]
 inherit = bar/main
-monitor = ${env:MONITOR:DisplayPort-0}
+monitor = ${env:MONITOR:DP-0}
 
 modules-right = date 
 
