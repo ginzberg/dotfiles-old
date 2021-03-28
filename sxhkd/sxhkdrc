@@ -33,6 +33,12 @@ super + F5
 super + F6
   systemctl --user stop synergys
 
+# toggle monitors
+super + F1
+  dual_monitors.sh
+super + shift + F1
+  dual_monitors_mirrored.sh
+
 # BSPWM
 
 #

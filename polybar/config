@@ -63,11 +63,12 @@ modules-right = pulseaudio date
 
 wm-restack = bspwm
 
+tray-position = right
+
 [bar/secondary]
 inherit = bar/main
 monitor = ${env:MONITOR:DP-0}
 
-modules-right = date 
 
 
 [module/bspwm]
