@@ -2,7 +2,8 @@
 ! st config
 !-----------
 
-st*font: IBM Plex Mono:size=14
+! st*font: IBM Plex Mono:size=14
+st*font: Hack Nerd Font:size=14
 
 st*fontalt0: Siji:size=14 
 st*fontalt1: Symbola:size=9:antialias=true:autohint=true
