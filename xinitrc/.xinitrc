@@ -18,13 +18,13 @@ udiskie &
 xsetroot -cursor_name left_ptr &
 
 # picom
-picom & 
+picom --experimental-backends & 
 
 # Window Manager
 exec ~/scripts/status.sh &
 # exec xautolock -time 5 -locker slock &
-exec xautolock -time 10 -locker slock -killtime 30 -killer "systemctl suspend" &
-exec ~/scripts/startdwm.sh 
+exec xautolock -time 30 -locker slock -killtime 60 -killer "systemctl suspend" &
+exec startdwm.sh 
 # exec bspwm
 #
 

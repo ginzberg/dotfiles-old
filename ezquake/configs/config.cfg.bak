@@ -10,7 +10,7 @@
 
 // gnz's config
 
-// ezQuake 3.6-dev-alpha7-RekiFork-708211 r7136~e2342a3b Jul 11 2021, 13:17:53
+// ezQuake 3.6-quakecon-RC3 r7180~b664b4e0 Jul 28 2021, 21:17:07
 //  /opt/ezquake//ezquake.bin+connectbrdal.spawnfrag.com:28501-mem128-no-triple-gl-buffer-clientport0
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1391,7 +1391,7 @@ hud_weaponstats_pos_x                 "0"
 hud_weaponstats_pos_y                 "0"
 hud_weaponstats_proportional          "0"
 hud_weaponstats_scale                 "1"
-hud_weaponstats_show                  "1"
+hud_weaponstats_show                  "0"
 hud_weaponstats_textalign             "center"
 
 //Player Settings
@@ -1642,7 +1642,7 @@ gl_lightmode                          "1"
 gl_loadlitfiles                       "0"
 gl_oldlitscaling                      "0"
 gl_rl_globe                           "0"
-r_dynamic                             "0"
+r_dynamic                             "2"
 r_fullbright                          "0"
 r_shadows                             "0"
 
@@ -1753,6 +1753,7 @@ gl_nailtrail_plasma                   "0"
 gl_nailtrail_turb                     "0"
 gl_nocolors                           "0"
 gl_outline                            "0"
+gl_smoothmodels                       "1"
 gl_triplebuffer                       "1"
 gl_vbo_clientmemory                   "0"
 r_farclip                             "4096"
@@ -1907,6 +1908,7 @@ cl_pext_serversideweapon              "1"
 cl_pext_warndemos                     "1"
 cl_pext_weaponprediction              "1"
 cl_predict_beam                       "1"
+cl_predict_buffer                     "3"
 cl_predict_half                       "0"
 cl_predict_jump                       "0"
 cl_predict_players                    "1"
@@ -2005,11 +2007,11 @@ scr_scoreboard_teamsort               "0"
 //Crosshair Settings
 cl_crossx                             "0"
 cl_crossy                             "0"
-crosshair                             "4"
+crosshair                             "3"
 crosshairalpha                        "1"
-crosshaircolor                        "255 255 0"
-crosshairimage                        "7"
-crosshairscale                        "0"
+crosshaircolor                        "0 255 0"
+crosshairimage                        "Kosei"
+crosshairscale                        "2"
 crosshairscalemethod                  "0"
 crosshairsize                         "1"
 r_smoothcrosshair                     "0"

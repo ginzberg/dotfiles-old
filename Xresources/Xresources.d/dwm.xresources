@@ -1,7 +1,7 @@
 ! dwm specific
-dwm.normbordercolor: COLOR6
-dwm.normbgcolor: BACKGROUND
-dwm.normfgcolor: FOREGROUND
+dwm.normbordercolor: #000000
+dwm.normbgcolor: #000000
+dwm.normfgcolor: COLOR15
 dwm.selbordercolor: COLOR1
-dwm.selbgcolor: COLOR4
-dwm.selfgcolor: FOREGROUND 
+dwm.selbgcolor: COLOR0
+dwm.selfgcolor: COLOR15
