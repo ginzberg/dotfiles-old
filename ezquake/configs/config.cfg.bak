@@ -1391,7 +1391,7 @@ hud_weaponstats_pos_x                 "0"
 hud_weaponstats_pos_y                 "0"
 hud_weaponstats_proportional          "0"
 hud_weaponstats_scale                 "1"
-hud_weaponstats_show                  "0"
+hud_weaponstats_show                  "1"
 hud_weaponstats_textalign             "center"
 
 //Player Settings

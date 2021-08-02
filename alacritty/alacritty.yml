@@ -8,19 +8,19 @@ window:
 # Fonts
 font:
   normal:
-    family: Hack
+    family: Hack Nerd Font
     style: Regular
 
   bold:
-    family: Hack
+    family: Hack Nerd Font
     style: Bold
 
   italic:
-    family: Hack
+    family: Hack Nerd Font
     style: Italic
 
   bold_italic:
-    family: Hack
+    family: Hack Nerd Font
     style: Bold Italic
 
 # Point Size
@@ -32,7 +32,7 @@ colors:
   primary:
     # hard contrast: background = '#1d2021'
     # background: '#282828'
-    background: '#282828'
+    background: '#1d2021'
     # soft contrast: background = '#32302f'
     foreground: '#ebdbb2'
 
@@ -59,4 +59,4 @@ colors:
     white:   '#ebdbb2'
 
 # Tranparency
-    background_opacity: 1.0
+    background_opacity: 1.0 
