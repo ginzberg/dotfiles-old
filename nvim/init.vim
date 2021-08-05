@@ -23,11 +23,13 @@ set smarttab
 " vim-plug
 call plug#begin()
 Plug 'dylanaraps/wal.vim'
-Plug 'morhetz/gruvbox'
+" Plug 'morhetz/gruvbox'
+Plug 'dracula/vim'
 Plug 'lilydjwg/colorizer'
 call plug#end()
 
-colo gruvbox
+" colo gruvbox
+colorscheme dracula
 
 hi Normal guibg=NONE ctermbg=NONE
 

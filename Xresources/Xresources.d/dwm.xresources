@@ -1,6 +1,6 @@
 ! dwm specific
 dwm.normbordercolor: #1d2021
-dwm.normbgcolor: #1d2021
+dwm.normbgcolor: #000000
 dwm.normfgcolor: COLOR15
 dwm.selbordercolor: COLOR1
 dwm.selbgcolor: COLOR1

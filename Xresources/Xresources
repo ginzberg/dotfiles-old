@@ -13,9 +13,10 @@ Xft.hintstyle: hintslight
 Xft.lcdfilter: lcdfilter
 
 ! include external colors
-#include 	".Xresources.d/gruvbox-dark.xresources"
+! #include 	".Xresources.d/gruvbox-dark.xresources"
 !#include        ".Xresources.d/gruvbox-dark-soft.xresources"
 !#include 	".Xresources.d/nord.xresources"
+#include ".Xresources.d/dracula.xresources"
 
 ! set global alpha
 *.alpha:	0.8
