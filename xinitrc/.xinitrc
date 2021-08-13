@@ -8,11 +8,13 @@ fi
 
 # Monitors
 xset dpms 0 0 300 
-exec ~/scripts/dual_monitors.sh &
-
+exec ~/scripts/monitors/dual_monitors.sh &
 
 # USB automount
 udiskie &
+
+# Notifications
+dunst & 
 
 # cursor
 xsetroot -cursor_name left_ptr &
@@ -21,18 +23,10 @@ xsetroot -cursor_name left_ptr &
 picom --experimental-backends & 
 
 # Window Manager
-exec ~/scripts/status.sh &
-# exec xautolock -time 5 -locker slock &
+exec dwmblocks &
 exec xautolock -time 30 -locker slock -killtime 60 -killer "systemctl suspend" &
-exec startdwm.sh 
-# exec bspwm
-#
+exec startdwm.sh &
 
-# session=${1:-bspwm}
-
-# case $session in
-#   dwm       ) exec ~/scripts/startdwm.sh;;
-#  bspwm     ) exec bspwm;;
-#  # No known session, try to run it as a command
-#  *         ) exec $1;;
-#   esac
+# Other shit to start
+exec discord &
+exec firefox  
