@@ -11,7 +11,7 @@
 // gnz's config
 
 // ezQuake 3.6-quakecon-release3 r7201~729660d1 Aug  5 2021, 15:58:28
-//  /opt/ezquake//ezquake.bin+connectbrdal.spawnfrag.com:28501-mem128-no-triple-gl-buffer-clientport0
+//  /opt/ezquake//ezquake.bin+connectbrdal.spawnfrag.com:28501-mem128-no-triple-gl-buffer-clientport0-condebug/tmp/quake_fifo
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                                //
@@ -1794,7 +1794,7 @@ vid_gl_core_profile                   "0"
 vid_grab_keyboard                     "0"
 vid_height                            "0"
 vid_hwgammacontrol                    "2"
-vid_minimize_on_focus_loss            "1"
+vid_minimize_on_focus_loss            "0"
 vid_renderer                          "1"
 vid_showextensions                    "0"
 vid_software_palette                  "1"
@@ -2011,7 +2011,7 @@ cl_crossy                             "0"
 crosshair                             "4"
 crosshairalpha                        "1"
 crosshaircolor                        "0 255 255"
-crosshairimage                        ""
+crosshairimage                        "OPDot"
 crosshairscale                        "2"
 crosshairscalemethod                  "0"
 crosshairsize                         "1"
@@ -2750,6 +2750,7 @@ bind  F5            "join"
 bind  F6            "observe"
 bind  F10           "quit"
 bind  F12           "screenshot"
+bind  HOME          "vid_restart"
 bind  MOUSE1        "+rl"
 bind  MOUSE2        "+jump"
 bind  MOUSE3        "+gl"

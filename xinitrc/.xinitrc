@@ -23,10 +23,8 @@ xsetroot -cursor_name left_ptr &
 picom --experimental-backends & 
 
 # Window Manager
-exec dwmblocks &
-exec xautolock -time 30 -locker slock -killtime 60 -killer "systemctl suspend" &
-exec startdwm.sh &
+# exec dwmblocks &
+exec ~/scripts/start_dwmblocks.sh &
 
-# Other shit to start
-exec discord &
-exec firefox  
+exec xautolock -time 30 -locker slock -killtime 60 -killer "systemctl suspend" &
+exec startdwm.sh 
