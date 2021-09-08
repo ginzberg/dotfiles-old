@@ -25,4 +25,3 @@ Xft.lcdfilter: lcdfilter
 ! include app specific
 #include 	".Xresources.d/dwm.xresources"
 #include	".Xresources.d/st.xresources"
-#include  ".Xresources.d/rofi.xresources"
