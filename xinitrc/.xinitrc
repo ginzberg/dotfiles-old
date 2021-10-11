@@ -41,7 +41,7 @@ picom --experimental-backends &
 
 
 # Old version which had the double wake from sleep
-exec xautolock -time 30 -locker slock -killtime 60 -killer "systemctl suspend" &
+exec xautolock -time 30 -locker slock -killtime 60 -killer "systemctl suspend" -detectsleep &
 
 # Window Manager
 exec dwmblocks &
