@@ -40,11 +40,7 @@ xsetroot -cursor_name left_ptr &
 picom --experimental-backends & 
 
 
-# Old version which had the double wake from sleep
-# exec xautolock -time 30 -locker slock -killtime 60 -killer "systemctl suspend" -detectsleep &
-
-# exec xautolock.sh &
-xautolock -time 12 -locker "systemctl suspend" -detectsleep & 
+exec xautolock -time 5 -locker slock -killtime 12 -killer "systemctl suspend" -detectsleep &
 
 # Window Manager
 exec dwmblocks &
