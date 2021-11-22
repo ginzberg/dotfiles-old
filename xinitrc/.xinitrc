@@ -40,7 +40,8 @@ xsetroot -cursor_name left_ptr &
 picom --experimental-backends & 
 
 
-exec xautolock -time 5 -locker slock -killtime 12 -killer "systemctl suspend" -detectsleep &
+# exec xautolock -time 5 -locker slock -killtime 12 -killer "systemctl suspend" -detectsleep &
+exec ~/scripts/xautolock.sh &
 
 # Window Manager
 exec dwmblocks &
