@@ -1,0 +1,70 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+///                                                                                              ///
+///                                                                                              ///
+///                          E Z Q U A K E   C O N F I G U R A T I O N                           ///
+///                                                                                              ///
+///                                                                                              ///
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// gnz's config
+
+// ezQuake 3.6-quakecon-release3 r7201~729660d1 Aug  5 2021, 15:58:28
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                                                                                //
+//                                    K E Y   B I N D I N G S                                     //
+//                                                                                                //
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+unbindall
+bind  TAB           "+showteamscores"
+bind  ENTER         "messagemode"
+bind  ESCAPE        "togglemenu"
+bind  SPACE         "+lg"
+bind  1             "tp_msggetquad"
+bind  2             "tp_msgquaddead"
+bind  3             "tp_msgenemypwr"
+bind  4             "__slipped"
+bind  5             "tp_msggetpent"
+bind  `             "toggleconsole"
+bind  a             "+moveleft"
+bind  b             "+give_lg"
+bind  c             "tp_msglost"
+bind  d             "+moveright"
+bind  e             "tp_msgneed"
+bind  f             "tp_msgreport"
+bind  q             "tp_msgtook"
+bind  r             "tp_msgutake"
+bind  s             "+back"
+bind  t             "tp_msgtrick"
+bind  u             "messagemodeqtvtogame"
+bind  v             "+give_rl"
+bind  w             "+forward"
+bind  x             "tp_msghelp"
+bind  y             "messagemode2"
+bind  z             "tp_msgsafe"
+bind  BACKSPACE     "colors_toggle"
+bind  PAUSE         "toggleproxymenu"
+bind  LEFTARROW     "pos_save"
+bind  RIGHTARROW    "pos_move"
+bind  ALT           "+movedown"
+bind  CTRL          "tp_msgreplace"
+bind  SHIFT         "+sng"
+bind  F1            "tp_msgyesok"
+bind  F2            "tp_msgnocancel"
+bind  F3            "tp_msgcoming"
+bind  F4            "tp_msgwaiting"
+bind  F5            "join"
+bind  F6            "observe"
+bind  F10           "quit"
+bind  F12           "screenshot"
+bind  HOME          "vid_restart"
+bind  MOUSE1        "+rl"
+bind  MOUSE2        "+jump"
+bind  MOUSE3        "+gl"
+bind  MOUSE4        "+ssg"
+bind  MOUSE5        "+sg"
+bind  MWHEELUP      "tp_msgpoint; shownick"
+bind  MWHEELDOWN    "+ax"
