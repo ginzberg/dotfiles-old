@@ -119,15 +119,17 @@ end
 local is_dark_bg = (bg_numberic_value < 383)
 
 -- Generate wallpaper:
-local wallpaper_bg = xrdb.color8
-local wallpaper_fg = xrdb.color7
-local wallpaper_alt_fg = xrdb.color12
-if not is_dark_bg then
-    wallpaper_bg, wallpaper_fg = wallpaper_fg, wallpaper_bg
-end
-theme.wallpaper = function(s)
-    return theme_assets.wallpaper(wallpaper_bg, wallpaper_fg, wallpaper_alt_fg, s)
-end
+-- local wallpaper_bg = xrdb.color8
+-- local wallpaper_fg = xrdb.color7
+-- local wallpaper_alt_fg = xrdb.color12
+-- if not is_dark_bg then
+--     wallpaper_bg, wallpaper_fg = wallpaper_fg, wallpaper_bg
+-- end
+-- theme.wallpaper = function(s)
+--     return theme_assets.wallpaper(wallpaper_bg, wallpaper_fg, wallpaper_alt_fg, s)
+-- end
+
+theme.wallpaper = "~/.config/awesome/themes/gnz/blackhole.jpg"
 
 return theme
 

@@ -14,6 +14,8 @@ local beautiful = require("beautiful")
 local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
+local xresources = require("beautiful.xresources")
+local xrdb = xresources.get_current_theme()
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
@@ -46,7 +48,7 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 -- beautiful.init(gears.filesystem.get_themes_dir() .. "/xresources/theme.lua")
-local theme_path = string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"), "xresources")
+local theme_path = string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"), "gnz")
 beautiful.init(theme_path)
 
 -- This is used later as the default terminal and editor to run.
@@ -198,7 +200,7 @@ awful.screen.connect_for_each_screen(function(s)
     }
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s })
+    s.mywibox = awful.wibar({ position = "top", screen = s, opacity = 0.7 })
 
     -- Add widgets to the wibox
     s.mywibox:setup {
@@ -319,8 +321,8 @@ globalkeys = gears.table.join(
               {description = "restore minimized", group = "client"}),
 
     -- Prompt
-    awful.key({ modkey },            "p", function () awful.util.spawn({'dmenu_run', '-fn', "Hack Nerd Font:size=18", '-nb', '#282A36', '-nf', '#F8F8F2', '-sb', '#BD93F9', '-sf', '#F8F8F2'}) end,
-  {description = "dmenu", group = "launcher"}),
+    awful.key({ modkey },            "p", function () awful.util.spawn({'dmenu_run', '-fn', 'Hack Nerd Font:size=14', '-nb', xrdb.background, '-nf', xrdb.foreground, '-sb', xrdb.color12, '-sf', xrdb.foreground}) end, 
+    {description = "dmenu", group = "launcher"}), 
 
 --    awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
 --               {description = "run prompt", group = "launcher"}),
@@ -592,11 +594,10 @@ client.connect_signal("request::titlebars", function(c)
 end)
 
 -- Enable sloppy focus, so that focus follows mouse.
--- client.connect_signal("mouse::enter", function(c)
---     c:emit_signal("request::activate", "mouse_enter", {raise = false})
--- end)
+ client.connect_signal("mouse::enter", function(c)
+     c:emit_signal("request::activate", "mouse_enter", {raise = false})
+ end)
 
-client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
-client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
+client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus c.opacity = 1 end)
+client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal c.opacity= 1 end)
 -- }}}
---
