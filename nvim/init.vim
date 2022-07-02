@@ -1,12 +1,13 @@
 " Keep defaults with .vimrc
 unlet! skip_defaults_vim
 " source $VIMRUNTIME/defaults.vim
-source /usr/share/vim/vim82/defaults.vim
+" source /usr/share/vim/vim82/defaults.vim
 
 " Sensible defaults
 filetype plugin on
 filetype indent on
 syntax on
+set encoding=UTF-8
 
 " turn hybrid line numbers on
 set number relativenumber
@@ -30,6 +31,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
@@ -42,6 +44,9 @@ hi Normal guibg=NONE ctermbg=NONE
 nnoremap <leader>n :NERDTReeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
+
+" airline
+let g:airline_powerline_fonts = 1
 
 " autocmds
 autocmd BufWritePost *sxhkdrc !pkill sxhkd && setsid sxhkd &
