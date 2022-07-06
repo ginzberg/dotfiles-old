@@ -105,3 +105,6 @@ alias vim="nvim"
 alias ls="exa"
 alias ll="exa -lah"
 alias dallas="ssh rallen@dal.spawnfrag.com"
+
+# starship
+eval "$(starship init zsh)"
