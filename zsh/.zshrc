@@ -108,3 +108,9 @@ alias dallas="ssh rallen@dal.spawnfrag.com"
 
 # starship
 eval "$(starship init zsh)"
+
+
+# startx
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+startx
+fi
