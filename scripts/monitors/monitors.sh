@@ -12,4 +12,4 @@ xrandr --output DP-2 --primary --mode 1920x1080 --rate 360.11 \
 
 # Set background
 # feh --bg-center ~/Pictures/wallpaper/quake_desktop.png &
-feh --bg-scale ~/Pictures/wallpaper/llGzaVSVIcaIYZkI7XbfjOfqAxSjkvuCi_dsYzPG04A.jpg &
+feh --bg-scale ~/Pictures/wallpaper/blackhole.jpg &

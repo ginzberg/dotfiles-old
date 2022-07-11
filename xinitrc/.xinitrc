@@ -44,8 +44,8 @@ picom --experimental-backends &
 exec ~/scripts/xautolock.sh &
 
 # Window Manager
-# exec dwmblocks &
+exec dwmblocks &
 # exec ~/scripts/start_dwmblocks.sh 
-# exec startdwm.sh 
+exec startdwm.sh 
 # exec bspwm
-exec awesome
+# exec awesome
