@@ -74,6 +74,11 @@ _G.packer_plugins = {
     path = "/home/rallen/.local/share/nvim/site/pack/packer/start/colorizer",
     url = "https://github.com/lilydjwg/colorizer"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/rallen/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/rallen/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -83,16 +88,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/rallen/.local/share/nvim/site/pack/packer/start/vim",
     url = "https://github.com/dracula/vim"
-  },
-  ["vim-airline"] = {
-    loaded = true,
-    path = "/home/rallen/.local/share/nvim/site/pack/packer/start/vim-airline",
-    url = "https://github.com/vim-airline/vim-airline"
-  },
-  ["vim-airline-themes"] = {
-    loaded = true,
-    path = "/home/rallen/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
-    url = "https://github.com/vim-airline/vim-airline-themes"
   },
   ["vim-devicons"] = {
     loaded = true,
