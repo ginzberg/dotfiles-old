@@ -1,9 +1,9 @@
 local map = vim.api.nvim_set_keymap
-local opt = { noremap = true }
+local opts = { noremap = true }
 
 -- map the leader key
-map('n', '<Space>', '', {})
+map("n", "<Space>", "<Nop>", { silent = true })
 vim.g.mapleader = ' ' -- 'vim.g' sets global variables
 
 -- nvim-tree
--- put bindings here
+map("n", "<leader>e", ":NvimTreeToggle<CR>", opts)

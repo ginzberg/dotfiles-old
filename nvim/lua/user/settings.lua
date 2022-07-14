@@ -21,3 +21,6 @@ set.relativenumber    = true
 set.cursorline        = true
 
 set.hidden            = true
+
+set.mouse             = 'a'
+set.clipboard        = 'unnamedplus'
