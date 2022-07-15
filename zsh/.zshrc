@@ -106,9 +106,12 @@ eval $(keychain --eval --quiet id_rsa )
 
 # aliases
 alias vim="nvim"
+alias v="nvim"
 alias ls="exa"
 alias ll="exa -lah"
 alias dallas="ssh rallen@dal.spawnfrag.com"
+alias brain="ssh root@brain.local"
+alias gnzarch="ssh rallen@gnzarch.local"
 
 # starship
 eval "$(starship init zsh)"
