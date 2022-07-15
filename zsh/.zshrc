@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 # Keychain
-eval $(keychain --eval --quiet id_rsa )
+eval $(keychain --eval --quiet id_rsa)
 
 # aliases
 alias vim="nvim"
