@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git sudo npm node)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,6 +100,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+
+# Keychain
+eval $(keychain --eval --quiet id_rsa )
+
 # aliases
 alias vim="nvim"
 alias ls="exa"
@@ -109,6 +113,8 @@ alias dallas="ssh rallen@dal.spawnfrag.com"
 # starship
 eval "$(starship init zsh)"
 
+# vim keys
+bindkey -v
 
 # startx
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
