@@ -113,6 +113,7 @@ eval $(keychain --eval --quiet id_rsa)
 # aliases
 alias vim="nvim"
 alias v="nvim"
+alias vi="nvim"
 alias ls="exa"
 alias ll="exa -lah"
 alias dallas="ssh rallen@dal.spawnfrag.com"
