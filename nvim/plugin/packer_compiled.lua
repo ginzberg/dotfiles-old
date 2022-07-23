@@ -74,6 +74,11 @@ _G.packer_plugins = {
     path = "/home/rallen/.local/share/nvim/site/pack/packer/start/colorizer",
     url = "https://github.com/lilydjwg/colorizer"
   },
+  ["dracula.nvim"] = {
+    loaded = true,
+    path = "/home/rallen/.local/share/nvim/site/pack/packer/start/dracula.nvim",
+    url = "https://github.com/Mofiqul/dracula.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/rallen/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -88,11 +93,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/rallen/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
-  },
-  vim = {
-    loaded = true,
-    path = "/home/rallen/.local/share/nvim/site/pack/packer/start/vim",
-    url = "https://github.com/dracula/vim"
   },
   ["vim-devicons"] = {
     loaded = true,
