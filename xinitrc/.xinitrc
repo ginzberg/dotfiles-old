@@ -1,24 +1,8 @@
 #!/bin/bash
 
-# if [ $(update-alternatives --query glx|grep -i best|grep -i nvidia -c) -ne 0 ];then
-#    echo "loading nvidia preferences"
-#    export __GL_THREADED_OPTIMIZATIONS=0
-#    export __GL_YIELD="NOTHING"
-#    export __GL_MaxFramesAllowed=1
-#    nvidia-settings -a "[gpu:0]/GPUPowerMizerMode=1" >/dev/null 2>&1&
-#    nvidia-settings -a OpenGLImageSettings=3 >/dev/null 2>&1&
-#    nvidia-settings -a SyncToVBlank=0 >/dev/null 2>&1&
-#    nvidia-settings -a AllowFlipping=1 >/dev/null 2>&1&
-#    wait
-#else
-#    export mesa_glthread=false
-#    export vblank_mode=0 #no vsync
-#fi
-
-# define Xresources
+# Xresources
 userresources=$HOME/.Xresources
 
-# Load Xresources colors
 if [ -f "$userresources" ]; then
         xrdb -merge "$userresources"
 fi
@@ -33,19 +17,15 @@ udiskie &
 # Notifications
 dunst & 
 
-# cursor
+# Cursor
 xsetroot -cursor_name left_ptr &
 
-# picom
+# Compositor
 picom --experimental-backends & 
 
-
-# exec xautolock -time 5 -locker slock -killtime 12 -killer "systemctl suspend" -detectsleep &
+# Power Management
 exec ~/scripts/xautolock.sh &
 
 # Window Manager
 exec dwmblocks &
-# exec ~/scripts/start_dwmblocks.sh 
 exec startdwm.sh 
-# exec bspwm
-# exec awesome
