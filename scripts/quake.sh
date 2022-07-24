@@ -18,7 +18,8 @@
 
 
 #create this file and put any of the following variables in them to override defaults
-. ${HOME}/.quake_script_prefs.sh >/dev/null 2>&1
+# . ${HOME}/.quake_script_prefs.sh >/dev/null 2>&1
+. /home/rallen/.quake_script_prefs.sh >/dev/null 2>&1
 
 
 #game vars - these most likely need to be customized
