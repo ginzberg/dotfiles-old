@@ -120,6 +120,8 @@ alias dallas="ssh rallen@dal.spawnfrag.com"
 alias brain="ssh root@brain.local"
 alias gnzarch="ssh rallen@gnzarch"
 alias pacman="sudo pacman"
+alias apt="sudo apt"
+alias nala="sudo nala"
 
 # starship
 eval "$(starship init zsh)"
