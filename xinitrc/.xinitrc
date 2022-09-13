@@ -24,8 +24,8 @@ xsetroot -cursor_name left_ptr &
 picom --experimental-backends & 
 
 # Power Management
-exec ~/scripts/xautolock.sh &
+~/scripts/xautolock.sh &
 
 # Window Manager
-exec dwmblocks &
+dwmblocks &
 exec startdwm.sh 

@@ -8,4 +8,5 @@
 
 
 # initialize volume by ending signal
-kill -53 $(pidof dwmblocks)
+kill -53 $(pidof dwmblocks) # why is this 53?
+kill -44 $(pidof dwmblocks)

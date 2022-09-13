@@ -28,8 +28,8 @@ nquake_wad_guns.pk3
 nquake_bmodels.pk3
 nquake_models.pk3
 simpleitems_dithes.pk3
-colorized_qrp_models_and_bmodels.pk3
-// QRP_model_textures.pk3
+// colorized_qrp_models_and_bmodels.pk3
+QRP_model_textures.pk3
 // simple-single_color-guns_colored.pk3
 // simple-single_color-guns_grey.pk3
 // simple-single_color-models.pk3

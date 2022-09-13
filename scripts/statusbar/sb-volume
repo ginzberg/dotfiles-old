@@ -2,7 +2,7 @@
 
 
 vol="$(pamixer --get-volume)"
-sink="$(pactl get-default-sink)"
+sink="$(pamixer --get-default-sink)"
 
 if [ "$sink" = "alsa_output.pci-0000_2d_00.1.hdmi-stereo" ]; then
 	out_icon="蓼"
