@@ -9,10 +9,10 @@ fi
 
 # Monitors
 xset dpms 0 0 300 
-exec ~/scripts/monitors/monitors.sh &
+monitors.sh &
 
 # USB automount
-udiskie &
+# udiskie &
 
 # Notifications
 dunst & 
@@ -21,10 +21,10 @@ dunst &
 xsetroot -cursor_name left_ptr &
 
 # Compositor
-picom --experimental-backends & 
+picom & 
 
 # Power Management
-~/scripts/xautolock.sh &
+xautolock.sh &
 
 # Window Manager
 # start some nice programs
@@ -37,4 +37,4 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 dwmblocks &
-exec startdwm.sh 
+exec dwm 
