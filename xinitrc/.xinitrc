@@ -12,7 +12,7 @@ xset dpms 0 0 300
 monitors.sh &
 
 # USB automount
-# udiskie &
+udiskie &
 
 # Notifications
 dunst & 
