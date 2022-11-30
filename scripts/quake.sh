@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd /opt/ezquake
+cd /opt/quake
 gamemoderun ./ezquake.bin +qwurl "$@"
