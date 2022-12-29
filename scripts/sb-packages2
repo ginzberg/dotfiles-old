@@ -1,0 +1,17 @@
+#!/bin/bash
+# Arch upgradeable packages
+
+case $BUTTON in
+  1) "$TERMINAL" -e "yay" ;;
+esac
+
+count=`checkupdates | wc -l`
+
+# Print them out
+
+if [ "$count" == "0" ]; then
+	echo ""
+else
+        echo " $count" # just this line for always
+fi
+

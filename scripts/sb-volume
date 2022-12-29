@@ -1,5 +1,8 @@
 #!/bin/sh
 
+case $BUTTON in
+  1) "$TERMINAL" -e "pulsemixer" ;;
+esac
 
 vol="$(pamixer --get-volume)"
 sink="$(pamixer --get-default-sink)"
@@ -13,3 +16,5 @@ fi
 [ $(pamixer --get-mute) = true ] && echo "$out_icon 🔇" && exit
 
 echo "$out_icon $vol%"
+
+# kill -44 $(pidof dwmblocks)
