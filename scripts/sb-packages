@@ -1,14 +1,12 @@
 #!/bin/bash
 # Arch upgradeable packages
 
-# Count them up
-list=`pacman -Qu 2> /dev/null`
+case $BUTTON in
+  1) "$TERMINAL" -e "yay" ;;
+  3) notify-send "$(/usr/bin/checkupdates)"
+esac
 
-if [ "$list" == "" ]; then
-    count=0
-else
-    count=`echo "$list" | wc -l`
-fi
+count=`checkupdates | wc -l`
 
 # Print them out
 
