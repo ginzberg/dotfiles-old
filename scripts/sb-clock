@@ -1,4 +1,8 @@
 #! /bin/sh 
 
-dte_clock="$(date +"%I:%M %p"| sed 's/  / /g')"
+# dte_clock="$(date +"%I:%M %p"| sed 's/  / /g')"
+# echo "    $dte_clock"
+
+
+dte_clock="$(date +'%I:%M %p')"
 echo " $dte_clock"

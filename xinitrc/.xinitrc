@@ -15,7 +15,7 @@ monitors.sh &
 udiskie &
 
 # Notifications
-dunst & 
+# dunst & 
 
 # Cursor
 xsetroot -cursor_name left_ptr &
@@ -24,7 +24,7 @@ xsetroot -cursor_name left_ptr &
 # picom & 
 
 # Power Management
-xautolock.sh &
+# xautolock.sh &
 
 # Window Manager
 # start some nice programs

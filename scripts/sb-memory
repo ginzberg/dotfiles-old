@@ -1,4 +1,10 @@
 #! /bin/sh 
 
-mem="$(free -h | awk '/^Mem:/ {print $3 "/" $2}')"
-echo " $mem RAM "
+case $BUTTON in
+  1) "$TERMINAL" -s "htop -s PERCENT_MEM" ;;
+esac
+
+# mem="$(free -h | awk '/^Mem:/ {print $3 "/" $2}')"
+mem="$(free -h | awk '/^Mem:/ {print int (strtonum($3) / strtonum($2) * 100) "%" }')"
+
+echo " $mem"

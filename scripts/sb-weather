@@ -1,0 +1,9 @@
+#!/bin/sh
+
+curl wttr.in/Berkeley?format=2
+
+
+case $BUTTON in
+  1) "$TERMINAL" -e "curl v2.wttr.in/Berkeley" ;;
+  3) "$TERMINAL" -e "curl v3.wttr.in/Berkeley" ;;
+esac

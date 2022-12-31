@@ -1,2 +1,7 @@
 #!/bin/sh
-echo  CPU: `top -b -n1 | grep "Cpu(s)" | awk '{print $2 + $4}'`%
+
+case $BUTTON in
+  1) "$TERMINAL" -e "htop -s PERCENT_CPU" ;;
+esac
+
+echo  `top -b -n1 | grep "Cpu(s)" | awk '{print int ($2 + $4)}'`%
