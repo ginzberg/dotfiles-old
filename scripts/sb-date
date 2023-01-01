@@ -1,4 +1,8 @@
 #! /bin/sh 
 
+case $BUTTON in 
+  1) notify-send "date"
+esac
+
 dte_date="$(date +'%b %d')"
 echo " $dte_date"

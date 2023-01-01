@@ -21,7 +21,7 @@ st*borderpx: 10
 !st*background: FOREGROUND
 !st*cursorColor: BACKGROUND
 !st*defaultbg: #000000
-
+st*defaultbg: #282a36
 
 ! Dracula Xresources palette
 st*foreground: #F8F8F2
